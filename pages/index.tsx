@@ -37,7 +37,7 @@ const IndexRoute: React.FC<Props> = ({products}) => {
           <Stack key={product.id} backgroundColor="gray.100">
             <Text>{product.title}</Text>
             <Text>{parseCurrency(product.price)}</Text>
-            <Button colorScheme="blue" onClick={() => setCart((cart) => cart.concat(product))}>
+            <Button colorScheme="primary" onClick={() => setCart((cart) => cart.concat(product))}>
               Agregar
             </Button>
           </Stack>
